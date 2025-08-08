@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome 6 (Latest) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .contain {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            top:100px;
+            left: 550px;
+        }
+        .logs{
+            background-color: rgb(243, 240, 184);
+            position: absolute;
+            width: 100px;
+            height: 25px;
+            border-radius: 10%;
+            top:-70px;
+
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+        }
+        body{
+            width: 75vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            border: solid black;
+            padding: 20px;
+            width: 400px;
+            height:400px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+        }
+        form input{
+            border-radius: 20px;
+            padding: 5px;
+            background-color: aliceblue;
+
+        }
+        input[type='date'],input[type='username'],input[type='password']{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section class="contain">
+        <div class="logs">
+            <i class="fa-solid fa-person"></i>
+            log in
+        </div>
+    </section>
+    <form>
+        <div class="usern">
+            <i class="fa-solid fa-users"></i>
+            <input type="username" placeholder="username" id="user">
+        </div>       
+        <br>
+        <br>
+        <div class="pss">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="password" id="pass">
+        </div>
+        <br>
+        <br>
+        <div class="dat">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="date" name="date" id="dob" id="dob">
+        </div>
+        <br>
+        <br>
+        <button> login</button>
+ 
+    </form>
+</body>
+</html>
