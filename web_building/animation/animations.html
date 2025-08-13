@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Image</title>
+    <style>
+        img {
+            animation: imgAnim 5s infinite linear;
+        }
+
+        @keyframes imgAnim {
+            0% {
+                transform: translatex(0px) rotate(45deg);
+            }
+            30% {
+                transform: translatex(100px);
+            }
+            100% {
+                transform: translatex(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_OBwEv8IUKdvA7XLBc3UV3U_cEBQ5Yp59A&s" alt="">
+</body>
+</html>
