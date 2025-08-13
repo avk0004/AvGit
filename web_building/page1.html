@@ -3,48 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> xiaomi</title>
     <style>
-        body{
-            background-color: cornsilk ;
-            width: 100vw;
-            height: 5000px;
+        *{
+            margin: 10;
         }
-        .navbar_ul a{
-            display: flex;
-            flex-direction: column;
-        }
-        a{
-            text-decoration: none;
-            color: black; 
-            gap:5vh;
-            width: 10vw;
-            height: auto;
-            background-color: ghostwhite;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .search_bar{
-            position: sticky;
-            top:0vh; 
+        .full-nav {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #f3efef;
+        }
+        .nav1{
+            width:40%;
+        }
+        .nav2{
+            width: 40%;
+        }
+        .nav1ul, .nav2ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(58, 54, 54);
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: #ff6700; 
+        }
+        .mainimg{
+            width:100vw
+        }
+        .mainimg img {
+            width:100vw ;
+        }
+        .para_featured {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            padding: 1vh 0;
-            width: 1000px;
+        }
+        .para_featured  p{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .cards_heading {
+            display: flex;
+            margin-left: 40%;
+            gap: 5vh;
+        }
+        .showcase_img{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .showcase{
+            margin-left: 5vw;
+        }
+        .showcase_img img{
+            border-radius: 50px;
+            width: 40vw;
+            height: auto;
+        }
+        .show1_para{
+            font-size: 50px;
+        }
+        .c{
+            font-size: 20px;
+            padding-left: 50px;
+        }
+        .showcase_img .p button{
+            background-color: black;
+            color: #ffffff;
+            width: 7vw;
+            height: 6vh;
+            font-size: 2vh;
+            border-radius: .5vw;
+        }
+        .showcase_img .p button:hover{
+            opacity: 80%;
+        }
+        .card{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card4 p {
+            display: flex;
+            justify-content: space-between;
+            width:150px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="icon">
-            logo
+        <div class="full-nav">
+            <div class="nav1">
+                <ul class="nav1ul">
+                    <li><a href="#logo">logo</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#phone">phone</a></li>
+                    <li><a href="#tablet">tablet</a></li>
+                    <li><a href="#tv">tv</a></li>
+                    <li><a href="#watch">watch</a></li>
+                </ul>
+            </div>
+            <div class="nav2">
+                <ul class="nav2ul">
+                    <li><a href="#discover">discover</a></li>
+                    <li><a href="#support">support</a></li>
+                    <li><a href="#search">search</a></li>
+                    <li><a href="#cart">cart</a></li>
+                    <li><a href="#signin">sign in</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="search_bar">
-            <input type="text" placeholder="search">
-        </div>
-        <button></button>
     </header>
+    <div class="mainimg">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202410/xiaomi-15-series-launched-in-china-303815531-16x9_0.jpeg?VersionId=XojwI8PIuwvrw3WivWhJQNwUVRlyNRAV" alt="">
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <div class="flex_main">
+            <div class="para_featured ">
+                <p>Featured Products</p>
+            </div>
+            <div class="ch">
+                <div class="cards_heading">
+                    <a href="#phone"> phone</a>
+                    <a href="#samrttv">samrt tv</a>
+                    <a href="#tablet">tablet</a>
+                    <a href="#lifestyle">lifestyle</a>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="showcase">
+                <div class="showcase_img">
+                    <img src="https://i03.appmifile.com/615_operator_in/18/12/2024/d7d6da3e85354cfa22fa33b7f39e7f60.png?thumb=1&w=1320&f=webp&q=85" alt="">
+                    <br>
+                    <div class="p">
+                        <p class="show1_para"> Redmi Note 14 Series</p>
+                        <p class="c">Lowest Price ever <br> starting at Rs16,999</p>
+                        <button >Learn More</button>
 
-    
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <img src="https://i03.appmifile.com/286_item_in/17/03/2025/3f5872ded299b098ae2e2d811703969b.png?thumb=1&w=320&f=webp&q=85" alt="">
+                        <br>
+                        <p class="card_para"> <strong>Xiaomi 15</strong> <br> ₹64,999 <del> ₹79,999</del></p>
+                    </div>
+                    <div class="card2">
+                        <img src="https://i03.appmifile.com/384_item_in/21/01/2025/57e74ae437499b7bcc66a9a62b07eaf3.png?thumb=1&w=320&f=webp&q=85" alt="">
+                        <br>
+                        <p class="card_para"> <strong>Redmi Note 14 Pro+ 5G</strong> <br> ₹64,999 <del> ₹79,999</del></p>
+                    </div>
+                    <div class="card3">
+                        <img src="https://i03.appmifile.com/385_item_in/21/01/2025/534f2e609ee27aebd1b04114efe98552.png?thumb=1&w=320&f=webp&q=85" alt="">
+                        <br>
+                        <p class="card_para"> <strong>Redmi Note 14 Pro 5G</strong> <br> ₹64,999 <del> ₹79,999</del></p>
+                    </div>
+                    <div class="card4">
+                        <img src="https://i03.appmifile.com/270_item_in/11/04/2025/7c4e711621bb12e2c405bfc9e38aa17d.png?thumb=1&w=320&f=webp&q=85" alt="">
+                        <br>
+                        <p class="card_para"> <strong>Redmi A5</strong> <br> <p>₹64,999 <del> ₹79,999</del></p></p>
+                    </div>
+                </div>
+            </div>
+    </div>
 </body>
 </html>
