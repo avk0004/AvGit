@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS dom </title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #c {
+            background-image: url(./asset/1.jpg);
+            position: relative;
+            background-size: cover;
+            width: 2050px;
+            height: 1000px;
+            background-repeat: no-repeat;
+            transition: .5s ease-in-out;
+        }
+        .main{
+            position: absolute;
+            bottom:13vh;
+            right:5vw;
+        
+        }
+        .main img{
+            width: 100px;
+            height: 75px;
+            gap:50px;
+            align-items: center;
+        
+        }
+        #r1 {
+            position: absolute;
+            rotate: 180deg;
+            top:50%;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px; 
+        }
+        #r2 {
+            position: absolute;
+            right:1vw;
+            top:50%;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px; 
+        }
+        .main img:hover {
+            transform:scale(1.2);
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- <H1 ID="m1">25</H1>
+    <div class="class">BOX</div>
+    <div class="class">BOX2</div>
+    <div class="class">BOX3</div>
+    <H2>MAN</H2>
+    <H2>MAN</H2>
+    <H2>MAN</H2>
+    <script src="./basic.js"></script> -->
+    <div id="c">
+        <div class="arrow">
+
+            <img  id="r1" onclick="left()" src="./asset/right.png" alt="load">
+            <img  id="r2" onclick="work()" src="./asset/right.png" alt="load">
+
+        </div>
+
+        <div class="main">
+            <img onclick="ick(0)" src="./asset/1.jpg" alt="">
+            <img onclick="ick(1)" src="./asset/2.jpg" alt="">       
+            <img onclick="ick(2)" src="./asset/3.jpg" alt="">    
+            <img onclick="ick(3)" src="./asset/4.jpg" alt="">    
+            <img onclick="ick(4)" src="./asset/5.jpg" alt="">    
+            <img onclick="ick(5)" src="./asset/6.jpg" alt="">    
+            <img onclick="ick(6)" src="./asset/7.jpg" alt="">    
+            <img onclick="ick(7)" src="./asset/8.jpg" alt="">    
+        </div>
+        <img on  src="" alt="">
+            <script src="basic.js">
+            </script>
+        </div>
+    </div>
+</body>
+</html>

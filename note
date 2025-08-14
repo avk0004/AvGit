@@ -18,3 +18,16 @@ table attractive
 --transition--
 --transform--
 
+JAVASCRIPT
+
+return javascript type
+1. return "<h1>"+txt+"</h1>"
+2. return `<h1>${txt}</h1>` that is `````````(above tab)
+
+queryselector 
+can selct id, tag, class
+it will select only first element first one alone 
+it can be used like css
+
+queryselector all
+select all class , tag, id 
