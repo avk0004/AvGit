@@ -7,9 +7,26 @@
 </head>
 <body>
     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum deserunt expedita labore debitis eius voluptate vitae animi! Enim fugiat et ratione impedit in ad molestias nostrum possimus adipisci voluptas.</p>
-    <p class="para1"> Loading -- </p>
-    <p class = "para2"> Hello my dear</p>
-    <input type="checkbox" name="checkbox" id="checkbox1">
-    <input type="checkbox" name="checkbox" id="">
+    <p class="para"> Loading -- </p>
+    <p class = "para"> Hello my dear</p>
+    <script>    
+        const a = document.getElementsByClassName("para");
+        console.log(a);
+        
+        a[0].style.backgroundColor="red"
+        for(let i=0; i<a.length;i++){
+            a[i].style.transition="1s ease in -out"
+
+            a[i].addEventListener("mouseover",function() {
+                this.style.color="Blue"
+            })
+             a[i].addEventListener("mouseout",function() {
+                this.style.color=""
+            })
+            a
+        }
+            
+
+</script>
 </body>
 </html>
