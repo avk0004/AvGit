@@ -1,5 +1,5 @@
 const con = document.getElementById("container")
-const arr =[ "./asset/1.jpg","./asset/2.jpg","./asset/3.jpg","./asset/4.jpg", "./asset/5.jpg","./asset/6.jpg","./asset/7.jpg","./asset/8.jpg"]
+const arr = ["./asset/1.jpg","./asset/2.jpg","./asset/3.jpg","./asset/4.jpg", "./asset/5.jpg","./asset/6.jpg","./asset/7.jpg","./asset/8.jpg"]
 const imgactive = document.getElementsByClassName("imags")
 console.log(imgactive)
 let i = 0

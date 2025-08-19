@@ -11,24 +11,38 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        #c {
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            margin-top: 2vh;
+        }
+        #container {
             background-image: url(./asset/1.jpg);
+            margin-top:7vh;
             position: relative;
             background-size: cover;
-            width: 2050px;
-            height: 1000px;
+            width: 100vw;
+            height: 100vh;
             background-repeat: no-repeat;
             transition: .5s ease-in-out;
         }
         .main{
+            background-color: transparent;
+            height: 10vh;
+            width: 30vw;
             position: absolute;
             bottom:13vh;
             right:5vw;
-        
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 5px 10px soild black;
         }
+
         .main img{
             width: 100px;
             height: 75px;
+            opacity: .5;
             gap:50px;
             align-items: center;
         
@@ -49,22 +63,31 @@
             width: 50px;
             height: 50px; 
         }
-        .main img:hover {
-            transform:scale(1.2);
+        .main .active {
+            transform:scale(1.5);
+            opacity: 1;
             transition: all 0.5s ease-in-out;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- <H1 ID="m1">25</H1>
-    <div class="class">BOX</div>
-    <div class="class">BOX2</div>
-    <div class="class">BOX3</div>
-    <H2>MAN</H2>
-    <H2>MAN</H2>
-    <H2>MAN</H2>
-    <script src="./basic.js"></script> -->
-    <div id="c">
+    <header>
+        <nav>
+            <div class="left-nav">
+                LOGO
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="#HOME">STORE</a></li>
+                    <li><a href="#CART">CART</a></li>
+                    <li><a href="#LOGIN">LOG-IN/ SIGN-UP </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container">
         <div class="arrow">
 
             <img  id="r1" onclick="left()" src="./asset/right.png" alt="load">
@@ -73,15 +96,17 @@
         </div>
 
         <div class="main">
-            <img onclick="ick(0)" src="./asset/1.jpg" alt="">
-            <img onclick="ick(1)" src="./asset/2.jpg" alt="">       
-            <img onclick="ick(2)" src="./asset/3.jpg" alt="">    
-            <img onclick="ick(3)" src="./asset/4.jpg" alt="">    
-            <img onclick="ick(4)" src="./asset/5.jpg" alt="">    
-            <img onclick="ick(5)" src="./asset/6.jpg" alt="">    
-            <img onclick="ick(6)" src="./asset/7.jpg" alt="">    
-            <img onclick="ick(7)" src="./asset/8.jpg" alt="">    
+            <img class="imags active" onclick="slide(0)" onclick="tapping" src="./asset/1.jpg" alt="">
+            <img class="imags"  onclick="slide(1)"  src="./asset/2.jpg" alt="">       
+            <img class="imags"  onclick="slide(2)" src="./asset/3.jpg" alt="">    
+            <img class="imags"  onclick="slide(3)" src="./asset/4.jpg" alt="">    
+            <img class="imags"  onclick="slide(4)" src="./asset/5.jpg" alt="">    
+            <img class="imags"  onclick="slide(5)" src="./asset/6.jpg" alt="">    
+            <img class="imags"  onclick="slide(6)" src="./asset/7.jpg" alt="">    
+            <img class="imags"  onclick="slide(7)" src="./asset/8.jpg" alt="">    
         </div>
+
+        
         <img on  src="" alt="">
             <script src="basic.js">
             </script>
